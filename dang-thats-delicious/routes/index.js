@@ -3,9 +3,10 @@ const router = express.Router();
 
 // Do work here
 router.get('/', (req, res) => {
-  const baiji = {name:"baiji",age:21,"cool":true}
+  // const baiji = {name:"baiji",age:21,"cool":true}
   // res.send('Hey! It works!');
-  res.json(baiji)
+  // res.json(baiji)
+  res.render("hello")
 });
 
 // 
