@@ -31,6 +31,7 @@ exports.editStore = async (req, res) => {
 }
 
 exports.updateStore = async (req,res) => {
+  req.body.location.type = "Point"
   // 找到并且更新
   const store = await Store.findOneAndUpdate({_id:req.params.id},req.body,{
     new:true,
